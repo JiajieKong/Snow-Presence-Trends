@@ -1,5 +1,5 @@
 # Snow-Presence-Trends
-# This is the draft for the Github version without testing. A fully tested version of the model will come out soon.
+# Trend Detection for Binary  Autocorrelated Time Series: Version 1.2.1
 # The `R` directory included three .R files
 # 1. core_function: The model function `Binary_Markov_TS(obs)` is used to fit the binary time series with the proposed model. It could be applied to a new time series dataset.
 # 2. Check_Result: Please load the dataframe `./data/Github_DF` and `./data/snow` before call any functions in this files. These functions help to reproduce most of the plots given in the paper.
