@@ -70,7 +70,7 @@ likelihood <- function(theta, observation=series, H = FALSE, seed.num = 1234) {
     
   }
 
-  return(xx)
+  return(log.likelihood)
 }
 
 se <- function(theta, series) {
@@ -216,6 +216,7 @@ Binary_Markov_TS <- function(obs){
     }, silent = TRUE)
   }
   
+  DF_tem <- matrix(DF_tem, nrow = 1)
   colnames(DF_tem) <- c("lon",
                         "lat",
                         "A_0",
