@@ -79,7 +79,7 @@ se <- function(theta, series) {
   
   year <- t %/% 52
  
-  pi1  <- rep(0, n)
+  pi1  <- rep(0, t)
   
   if (series[1]==0) {
     pi1[1] <- 0
@@ -285,7 +285,7 @@ G_v <- function(obs_df, Area){
   return(G_v/1e6) #divided 1e6 to obtain km^2
 }
 
-Regression_With_Design_Matrix(obs_df){
+Regression_With_Design_Matrix <- function(obs_df){
   
   year <- obs_df %% 52
   
